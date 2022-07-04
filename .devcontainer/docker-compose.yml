@@ -1,0 +1,25 @@
+version: "3.8"
+services:
+  lemonade-stand-db:
+    image: mcr.microsoft.com/mssql/server:2022-latest
+    ports:
+      - "1433:1433"
+    environment:
+      - ACCEPT_EULA=Y
+      - MSSQL_SA_PASSWORD=yourStrong(!)Password
+      - SA_PASSWORD=yourStrong(!)Password
+      - MSSQL_PID=Developer
+
+  lemonade-stand-dev:
+    build:
+      context: ..
+      dockerfile: .devcontainer/Dockerfile-dev
+      args:
+        VARIANT: "slim"
+    init: true
+    command: sleep infinity
+    volumes:
+      - ..:/app
+    depends_on:
+      - lemonade-stand-db
+      

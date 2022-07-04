@@ -1,0 +1,23 @@
+{
+  "profiles": {
+    "Local": {
+      "commandName": "Project",
+      "launchBrowser": true,
+      "launchUrl": "graphql",
+      "environmentVariables": {
+        "ASPNETCORE_ENVIRONMENT": "Local"
+      },
+      "applicationUrl": "http://localhost:8080"
+    },
+    "Container": {
+      "commandName": "Project",
+      "launchBrowser": true,
+      "launchUrl": "graphql",
+      "environmentVariables": {
+        "ASPNETCORE_URLS":"http://+:8080",
+        "ASPNETCORE_ENVIRONMENT": "Container"
+      },
+      "applicationUrl": "http://localhost:8080"
+    }
+  }
+}

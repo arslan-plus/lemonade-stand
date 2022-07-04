@@ -1,0 +1,84 @@
+html,
+body {
+    font-family: 'Alice';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 23px;
+    color: #151515;
+}
+
+label{
+    font-weight: bold;
+}
+
+.logo {
+    max-width: 400px;
+}
+
+@media screen and (max-width: 574px) {
+    .logo {
+        max-width: 200px;
+    }
+}
+
+tr.item td{
+    vertical-align: middle;
+}
+
+.item-img img{
+    width: 73px;
+    height: 57px;
+}
+
+.item-name {
+    text-align: left !important;
+    display: block;
+}
+
+.item-price {
+    text-align: right !important;
+}
+
+.item-size {
+    text-align: left;
+    clear: left !important;
+    display: block;
+    text-transform: capitalize;
+    color: #A2A2A2;
+    font-size: 18px;
+    line-height: 21px;
+}
+
+.item-quantity {
+ margin: 0 auto;
+ display: block;
+}
+
+.item-quantity .minus,
+.item-quantity .plus {
+    width: 27px;
+    height: 27px;
+    border: 1px solid #3f3c3c;
+}
+
+.item-quantity .value {
+    margin: 0 5px 0 5px!important;
+    background: transparent;
+    color: inherit;
+    font-weight: bold;
+    font-size: inherit;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+    width: 27px;
+    height: 27px;
+    overflow: hidden;
+    position: relative;
+    text-align: right;
+}
+
+.item-bill{
+    text-align: right;
+}
+

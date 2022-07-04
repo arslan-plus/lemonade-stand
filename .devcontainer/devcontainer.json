@@ -1,0 +1,19 @@
+{
+	"name": "lemonade-stand",
+	"dockerComposeFile": [
+		"docker-compose.yml"
+	],
+	"service": "lemonade-stand-dev",
+	"workspaceFolder": "/workspaces/lemonade-stand",
+	"remoteEnv": {
+		"LOCAL_WORKSPACE_FOLDER": "${localWorkspaceFolder}"
+	},
+	"settings": {
+		"debug.javascript.autoAttachFilter": "smart",
+		"terminal.integrated.cwd": "/workspaces/lemonade-stand"
+	},
+	"otherPortsAttributes": {
+		"onAutoForward": "silent"
+	},
+	"remoteUser": "root"
+}
